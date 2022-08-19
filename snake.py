@@ -175,6 +175,7 @@ def start():
             textSurfaceObj2 = fontObj2.render("Press Enter to play again.", True, BLACK)
             textRectObj2 = textSurfaceObj2.get_rect()
             textRectObj2.center = (250, 280)
+            snakelist = [first]
             screen.blit(textSurfaceObj, textRectObj)
             screen.blit(textSurfaceObj2, textRectObj2)
             pygame.display.flip()
@@ -199,6 +200,7 @@ def start():
             textSurfaceObj2 = fontObj2.render("Press Enter to play again.", True, BLACK)
             textRectObj2 = textSurfaceObj2.get_rect()
             textRectObj2.center = (250, 280)
+            snakelist = [first]
             screen.blit(textSurfaceObj, textRectObj)
             screen.blit(textSurfaceObj2, textRectObj2)
             pygame.display.flip()
@@ -210,9 +212,7 @@ def start():
                         helloAgain = True
             if helloAgain:
                 youlost = False
-                youwon = False
-          
-
+                youwon = False     
     
 if __name__ == '__main__':
     pygame.init()
